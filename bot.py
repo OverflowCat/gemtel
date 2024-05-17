@@ -8,6 +8,8 @@ from aiogram.filters import CommandStart, Command
 from gem import ask, rewrite
 from aiogram.client.session.aiohttp import AiohttpSession
 
+from dotenv import load_dotenv
+load_dotenv()
 PROXY = getenv("PROXY")
 session = AiohttpSession(proxy=PROXY) if PROXY else None
 

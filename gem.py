@@ -5,6 +5,8 @@ from typing import Callable, Optional
 from gemini_webapi import GeminiClient
 from aiogram.types import Message
 from aiogram.utils.markdown import blockquote
+from dotenv import load_dotenv
+load_dotenv()
 
 # Replace "COOKIE VALUE HERE" with your actual cookie values.
 # Leave Secure_1PSIDTS empty if it's not available for your account.
